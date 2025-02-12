@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import custom font */
+@import url('https://rsms.me/inter/inter.css');
+
+/* Smooth scroll behavior for the entire document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set the default font family for the body */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styling for anchor links globally */
+a {
+    position: relative;
+    text-decoration: none; /* Remove default underline for links */
+}
+
+/* Adding an underline effect on hover with a smooth transition */
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    opacity: 0;
+    height: 1px;
+    background-color: currentColor; /* Uses the current text color */
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Underline becomes visible on hover */
+a:hover::after {
+    opacity: 1;
+}
+
+/* Utility for links with small underline offset */
+.underline-offset-small::after {
+    bottom: 6px; /* Adjust the offset for the underline */
+}
+
+/* Utility to remove the underline effect */
+.no-underline-effect::after {
+    content: none; /* Completely removes the underline */
+}
+
+
+.gif-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+  }
+.gif-item {
+    text-align: center; /* Centers text and image */
+}
+.gif-item img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.gif-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between images */
+    margin-top: 20px;
+}
+
+
+.tables {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between images */
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.tables figure {
+    text-align: center; /* Center the caption below each image */
+    font-size: 20px;
+}
+.tables .quant_00 {
+    max-width: 100%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
+.tables .quant_01 {
+    max-width: 100%; /* Adjust size as needed */
+    height: auto;
+    align: top;
+    object-fit: contain;
+}
+
+
+.image-container img {
+    max-width: 50%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
+.image-container .img1 {
+    max-width: 59%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
+.image-container .img2 {
+    max-width: 41%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
+
+
+.image-container .qual_00 {
+    max-width: 53%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
+.image-container .qual_01 {
+    max-width: 47%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 5px;
+  margin: 5px;
+}
