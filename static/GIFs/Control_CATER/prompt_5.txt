@@ -1,0 +1,1 @@
+the medium cyan rubber sphere is picked up and placed to ( -2 , -2 ) . the medium purple metal cone is sliding to ( 2 , 3 ) .

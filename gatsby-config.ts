@@ -2,10 +2,10 @@ import type {GatsbyConfig} from "gatsby";
 
 const config: GatsbyConfig = {
     siteMetadata: {
-        title: `PlaySlot Project Website`,
-        siteUrl: `https://play-slot.github.io/PlaySlot/`,
+        title: `TextOCVP Project Website`,
+        siteUrl: `https://play-slot.github.io/TextOCVP/`,
     },
-    pathPrefix: "/PlaySlot",
+    pathPrefix: "/TextOCVP",
     graphqlTypegen: true,
     plugins: [
         "gatsby-plugin-postcss",

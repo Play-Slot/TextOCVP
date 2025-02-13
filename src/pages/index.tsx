@@ -122,8 +122,10 @@ const IndexPage: React.FC<PageProps> = () => {
                     </div>
 
 
-                    <p class="subtitle"> CATER </p>
                     <br></br>
+                    <br></br>
+                    <p class="subtitle"> CATER Qualitative Evaluation </p>
+
 
                     <div class="gif-container">
                         <p class="git-title-main">
@@ -148,13 +150,136 @@ const IndexPage: React.FC<PageProps> = () => {
                       </div>
                     </div>
 
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            the <span style={{color: 'gold',fontWeight: 800}}>large yellow rubber cone</span> is sliding to (2, 3).
+                            the <span style={{color: 'orange',fontWeight: 800}}>small gold metal snitch</span> is picked up and placed to (-3, 1).
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Qual_Comp/cater_2/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">MAGE Baseline</div>
+                            <img src="GIFs/Qual_Comp/cater_2/MAGE_pred.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">TextOCVP (ours)</div>
+                              <img src="GIFs/Qual_Comp/cater_2/TextOCVP_pred_GIF_frames.gif" alt=""></img>
+                          </div>
+                      </div>
+                    </div>
+
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            the <span style={{color: 'green',fontWeight: 800}}>medium green rubber cone</span> is picked up and containing the small gold metal snitch.
+                            the <span style={{color: 'purple',fontWeight: 800}}>large purple rubber cone</span> is picked up and placed to (-1, 3).
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Qual_Comp/cater_3/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">MAGE Baseline</div>
+                            <img src="GIFs/Qual_Comp/cater_3/MAGE_pred.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">TextOCVP (ours)</div>
+                              <img src="GIFs/Qual_Comp/cater_3/TextOCVP_pred_GIF_frames.gif" alt=""></img>
+                          </div>
+                      </div>
+                    </div>
+
+
+                    <br></br>
+                    <br></br>
+                    <p class="subtitle"> CLIPort Qualitative Evaluation </p>
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            put the <span style={{color: 'gray',fontWeight: 800}}>gray block</span> in
+                            the <span style={{color: 'brown',fontWeight: 800}}>brwons bowl</span>.
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Qual_Comp/cliport_1/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">MAGE-Dino Baseline</div>
+                            <img src="GIFs/Qual_Comp/cliport_1/MAGE_pred.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">TextOCVP (ours)</div>
+                              <img src="GIFs/Qual_Comp/cliport_1/TextOCVP_pred_GIF_frames.gif" alt=""></img>
+                          </div>
+                      </div>
+                    </div>
+
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            put the <span style={{color: 'gray',fontWeight: 800}}>gray block</span> in
+                            the <span style={{color: 'brown',fontWeight: 800}}>brown bowl</span>.
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Qual_Comp/cliport_2/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">MAGE-Dino Baseline</div>
+                            <img src="GIFs/Qual_Comp/cliport_2/MAGE_pred.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">TextOCVP (ours)</div>
+                              <img src="GIFs/Qual_Comp/cliport_2/TextOCVP_pred_GIF_frames.gif" alt=""></img>
+                          </div>
+                      </div>
+                    </div>
+
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            put the <span style={{color: 'gray',fontWeight: 800}}>gray block</span> in
+                            the <span style={{color: 'brown',fontWeight: 800}}>brown bowl</span>.
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Qual_Comp/cliport_3/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">MAGE-Dino Baseline</div>
+                            <img src="GIFs/Qual_Comp/cliport_3/MAGE_pred.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">TextOCVP (ours)</div>
+                              <img src="GIFs/Qual_Comp/cliport_3/TextOCVP_pred_GIF_frames.gif" alt=""></img>
+                          </div>
+                      </div>
+                    </div>
 
 
 
 
-                    <Heading> Text-Conditioned Predictions </Heading>
+                    <Heading> Object-Centric Video Prediction </Heading>
 
-                    TextOCVP represents each object in its corresponding object slots.
+                    TextOCVP represents each object in its corresponding object slot, learning accurate and interpretable object representations.
+
 
                     <div class="gif-container">
                         <p class="git-title-main">
@@ -268,107 +393,140 @@ const IndexPage: React.FC<PageProps> = () => {
 
                     <Heading> Controllability </Heading>
 
+                    We demonstrate that TextOCVP can generate multiple possible sequence continuations conditioned
+                    on a single reference frame and different captions.
+
+                    <br></br>
+                    <p class="subtitle"> Controllability on CATER </p>
+                    <br></br>
+
+
+                    <div class="control-gifs">
+                      <div class="control-item">
+                          <div class="control-title-caption">
+                            <div class="control-title">Original Caption</div>
+                            <div class="control-caption">
+                              <code>
+                                the <span style={{color: 'purple',fontWeight: 800}}>large purple rubber cone</span> is picked up and placed to (2, 3).
+                                the <span style={{color: 'orange',fontWeight: 800}}>small gold metal snitch </span>
+                                is picked up and placed to (-1, 1).
+                              </code>
+                            </div>
+                          </div>
+                          <img src="GIFs/Control_CATER/seq_5_FirstCaption.gif" alt="GIF 1"></img>
+                      </div>
+                      <div class="control-item">
+                          <div class="control-title-caption">
+                            <div class="control-title">Changed Actions</div>
+                            <div class="control-caption">
+                              <code>
+                                the <span style={{color: 'purple',fontWeight: 800}}>large purple rubber cone</span> is sliding to ( -1 , -3 ) .
+                                the <span style={{color: 'orange',fontWeight: 800}}>small gold metal snitch </span>
+                                is rotating .
+                              </code>
+                            </div>
+                          </div>
+                          <img src="GIFs/Control_CATER/seq_5_SecondCaption_actionChanged.gif" alt="GIF 4"></img>
+                      </div>
+                      <div class="control-item">
+                          <div class="control-title-caption">
+                            <div class="control-title">Changed Moving Objects and Actions</div>
+                            <div class="control-caption">
+                              <code>
+                                the <span style={{color: 'cyan',fontWeight: 800}}>medium cyan rubber sphere</span> is picked up and placed to ( -2 , -2 ) .
+                                the <span style={{color: 'purple',fontWeight: 800}}> medium purple metal cone </span>
+                                is sliding to ( 2 , 3 ) .
+                              </code>
+                            </div>
+                          </div>
+                          <img src="GIFs/Control_CATER/seq_5_SecondCaption_objectChanged.gif" alt="GIF 5"></img>
+                      </div>
+                      <div class="control-item">
+                          <div class="control-title-caption">
+                            <div class="control-title">Single Action in Caption</div>
+                            <div class="control-caption">
+                              <code>
+                                the <span style={{color: 'purple',fontWeight: 800}}>medium purple metal cone</span> is picked up and placed to ( -2 , -3 ) .
+                              </code>
+                            </div>
+                          </div>
+                          <img src="GIFs/Control_CATER/seq_5_SecondCaption_1prompt.gif" alt="GIF 2"></img>
+                      </div>
+                      <div class="control-item">
+                          <div class="control-title-caption">
+                            <div class="control-title">Three Distinct Actions in Caption</div>
+                            <div class="control-caption">
+                              <code>
+                                the <span style={{color: 'purple',fontWeight: 800}}>large purple rubber cone</span> is sliding to ( -1 , 1 ) .
+                                the <span style={{color: 'orange',fontWeight: 800}}> small gold metal snitch </span>
+                                is rotating .
+                                the <span style={{color: 'purple',fontWeight: 800}}> medium purple metal cone </span>
+                                is picked up and placed to ( -1 , -3 ) .
+                              </code>
+                            </div>
+                          </div>
+                          <img src="GIFs/Control_CATER/seq_5_SecondCaption_3prompts.gif" alt="GIF 3"></img>
+                      </div>
+                    </div>
+
+
+                    <br></br>
+                    <p class="subtitle"> Controllability on CLIPort </p>
+                    <br></br>
+
+                    <div class="cliport-control-title"> Changing the Target Bowl</div>
+                    <div class="cliport-control-gifs">
+                      <div class="cliport-control-item">
+                          <div class="cliport-control-caption">
+                            <code>
+                              put the <span style={{color: 'green',fontWeight: 800}}>green block </span>
+                              in the <span style={{color: 'cyan',fontWeight: 800}}>cyan bowl</span>.
+                            </code>
+                          </div>
+                          <img src="GIFs/Control_Cliport/seq_0/pred_1.gif" alt="GIF 1"></img>
+                      </div>
+                      <div class="cliport-control-item">
+                        <div class="cliport-control-caption">
+                          <code>
+                            put the <span style={{color: 'green',fontWeight: 800}}>green block </span>
+                            in the <span style={{color: 'red',fontWeight: 800}}>red bowl</span>.
+                          </code>
+                        </div>
+                          <img src="GIFs/Control_Cliport/seq_0/pred_2.gif" alt="GIF 2"></img>
+                      </div>
+                    </div>
+
+
+                    <div class="cliport-control-title"> Changing the Picked Block</div>
+                    <div class="cliport-control-gifs">
+                      <div class="cliport-control-item">
+                          <div class="cliport-control-caption">
+                            <code>
+                              put the <span style={{color: 'cyan',fontWeight: 800}}>cyan block </span>
+                              in the <span style={{color: 'brown',fontWeight: 800}}>brown bowl</span>.
+                            </code>
+                          </div>
+                          <img src="GIFs/Control_Cliport/seq_1/pred_1.gif" alt="GIF 1"></img>
+                      </div>
+                      <div class="cliport-control-item">
+                        <div class="cliport-control-caption">
+                          <code>
+                            put the <span style={{color: 'blue',fontWeight: 800}}>blue block </span>
+                            in the <span style={{color: 'brown',fontWeight: 800}}>brown bowl</span>.
+                          </code>
+                        </div>
+                          <img src="GIFs/Control_Cliport/seq_1/pred_2.gif" alt="GIF 2"></img>
+                      </div>
+                    </div>
+
+
+                    <br></br>
+
+
+                    <Heading> Text-to-Slot Attention </Heading>
+
                     TODO
 
-
-                    {/* MetaWorld: Button-Press */}
-                    <div>
-                      <br></br>
-                      <a class="subtitle">MetaWorld: Button-Press</a>
-                    </div>
-
-                    <div class="gif-container">
-                        <div class="gif-item">
-                          <div class="gif-title">Latent Predictions</div>
-                          <img src="GIFs/Behaviors/ButtonPress_00/pred_GIF_frames.gif" alt="Pred"></img>
-                        </div>
-                        <div class="gif-item">
-                          <div class="gif-title">Predicted Slot Masks</div>
-                          <img src="GIFs/Behaviors/ButtonPress_00/masks_GIF_masks.gif" alt="Masks"></img>
-                        </div>
-                        <div class="gif-item">
-                          <div class="gif-title">Simulated Execution</div>
-                          <img src="GIFs/Behaviors/ButtonPress_00/sim_GIF_frames.gif" alt="Sim"></img>
-                      </div>
-                    </div>
-                    <div class="gif-container">
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Latent Predictions</div> */}
-                          <img src="GIFs/Behaviors/ButtonPress_01/pred_GIF_frames.gif" alt="Pred"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Predicted Slot Masks</div> */}
-                          <img src="GIFs/Behaviors/ButtonPress_01/masks_GIF_masks.gif" alt="Masks"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Simulated Execution</div> */}
-                          <img src="GIFs/Behaviors/ButtonPress_01/sim_GIF_frames.gif" alt="Sim"></img>
-                      </div>
-                    </div>
-                    <div class="gif-container">
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Latent Predictions</div> */}
-                          <img src="GIFs/Behaviors/ButtonPress_02/pred_GIF_frames.gif" alt="Pred"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Predicted Slot Masks</div> */}
-                          <img src="GIFs/Behaviors/ButtonPress_02/masks_GIF_masks.gif" alt="Masks"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Simulated Execution</div> */}
-                          <img src="GIFs/Behaviors/ButtonPress_02/sim_GIF_frames.gif" alt="Sim"></img>
-                      </div>
-                    </div>
-
-
-                    {/* MetaWorld: Button-Press */}
-                    <div>
-                      <br></br>
-                      <a class="subtitle">BlockPush</a>
-                    </div>
-
-                    <div class="gif-container">
-                        <div class="gif-item">
-                          <div class="gif-title">Latent Predictions</div>
-                          <img src="GIFs/Behaviors/BlockPush_00/pred_GIF_frames.gif" alt="Pred"></img>
-                        </div>
-                        <div class="gif-item">
-                          <div class="gif-title">Predicted Slot Masks</div>
-                          <img src="GIFs/Behaviors/BlockPush_00/masks_GIF_masks.gif" alt="Masks"></img>
-                        </div>
-                        <div class="gif-item">
-                          <div class="gif-title">Simulated Execution</div>
-                          <img src="GIFs/Behaviors/BlockPush_00/sim_GIF_frames.gif" alt="Sim"></img>
-                      </div>
-                    </div>
-                    <div class="gif-container">
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Latent Predictions</div> */}
-                          <img src="GIFs/Behaviors/BlockPush_01/pred_GIF_frames.gif" alt="Pred"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Predicted Slot Masks</div> */}
-                          <img src="GIFs/Behaviors/BlockPush_01/masks_GIF_masks.gif" alt="Masks"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Simulated Execution</div> */}
-                          <img src="GIFs/Behaviors/BlockPush_01/sim_GIF_frames.gif" alt="Sim"></img>
-                      </div>
-                    </div>
-                    <div class="gif-container">
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Latent Predictions</div> */}
-                          <img src="GIFs/Behaviors/BlockPush_02/pred_GIF_frames.gif" alt="Pred"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Predicted Slot Masks</div> */}
-                          <img src="GIFs/Behaviors/BlockPush_02/masks_GIF_masks.gif" alt="Masks"></img>
-                        </div>
-                        <div class="gif-item">
-                          {/* <div class="gif-title">Simulated Execution</div> */}
-                          <img src="GIFs/Behaviors/BlockPush_02/sim_GIF_frames.gif" alt="Sim"></img>
-                      </div>
-                    </div>
 
 
                     <Citation/>

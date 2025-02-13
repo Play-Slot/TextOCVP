@@ -12,7 +12,7 @@ const Citation: React.FC = ({}) => {
     const backgroundColor = hexToRgba(linkColor, 0.05);
 
     useEffect(() => {
-        fetch("/bibtex.txt")
+        fetch("https://play-slot.github.io/TextOCVP/bibtex.txt")
             .then((response) => response.text())
             .then((data) => setBibtex(data))
             .catch((error) => console.error("Error loading BibTeX file:", error));

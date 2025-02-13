@@ -155,3 +155,69 @@ a:hover::after {
   padding-top: 5px;
   margin: 5px;
 }
+
+
+.control-gifs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.control-title-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 70%;
+    text-align: center;
+}
+.control-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 1px;
+}
+.control-caption {
+    width: 100%; /* Adjust the width as needed */
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+
+.cliport-control-title{
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.cliport-control-gifs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+.cliport-control-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cliport-control-caption {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.cliport-control-gifs img {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+/*  */
