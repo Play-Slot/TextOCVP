@@ -1,0 +1,6 @@
+@article{villar_TextOCVP_2025,
+  title={Object-Centric Image to Video Generation with Language Guidance},
+  author={Villar-Corrales, Angel, and Plepi, Gjergj and Behnke, Sven},
+  journal={TODO},
+  year={2025}
+}
