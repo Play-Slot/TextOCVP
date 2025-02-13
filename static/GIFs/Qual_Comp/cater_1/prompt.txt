@@ -1,0 +1,1 @@
+ the medium green metal sphere is sliding to (2, 1). the small brown metal cube is picked up and placed to (-3, 1).

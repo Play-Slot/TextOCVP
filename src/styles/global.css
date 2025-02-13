@@ -51,20 +51,35 @@ a:hover::after {
 
 
 .gif-container {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 50px;
   }
+.gif-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between items */
+}
 .gif-item {
     text-align: center; /* Centers text and image */
 }
 .gif-item img {
     width: 200px; /* Adjust size as needed */
     height: auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
+.git-title-main {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
 .gif-title {
     font-size: 18px;
     font-weight: bold;

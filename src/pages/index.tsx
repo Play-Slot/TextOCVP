@@ -86,12 +86,6 @@ const IndexPage: React.FC<PageProps> = () => {
                     </div>
 
 
-
-                    <Heading> PlaySlots Predictions </Heading>
-
-
-
-
                     <Heading> Benchmarking </Heading>
 
                     <div>
@@ -112,13 +106,162 @@ const IndexPage: React.FC<PageProps> = () => {
                     </div>
                     <br></br>
 
+
+                    <Heading> Qualitative Evaluation </Heading>
+
                     <div>
-                      TODO
+                      TextOCVP generates, given a single reference frame and a text caption, a sequence that closely aligns to the ground-truth.
+                      We observe that TextOCVP maintains sharp object representations and correctly models the dynamics and interactions between the robot and the objects.
+                      In contrasts, the baseline model features multiple errors and artifacts, such as missing objects or blurry contours.
+
                     </div>
 
                     <div class="image-container">
                         <img src="imgs/qual_imgs/qual_cater.png" alt="qual_01" class="qual_00"></img>
                         <img src="imgs/qual_imgs/qual_cliport.png" alt="qual_02" class="qual_01"></img>
+                    </div>
+
+
+                    <p class="subtitle"> CATER </p>
+                    <br></br>
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            the <span style={{color: 'green',fontWeight: 800}}>medium green metal sphere</span> is sliding to (2, 1).
+                            the <span style={{color: 'brown',fontWeight: 800}}>small brown metal cube</span> is picked up and placed to (-3, 1).
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Qual_Comp/cater_1/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">MAGE Baseline</div>
+                            <img src="GIFs/Qual_Comp/cater_1/MAGE_pred.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">TextOCVP (ours)</div>
+                              <img src="GIFs/Qual_Comp/cater_1/TextOCVP_pred_GIF_frames.gif" alt=""></img>
+                          </div>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <Heading> Text-Conditioned Predictions </Heading>
+
+                    TextOCVP represents each object in its corresponding object slots.
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            the <span style={{color: 'brown',fontWeight: 800}}>medium brown rubber cone</span> is picked up and containing the small gold metal snitch.
+                            the <span style={{color: 'gray',fontWeight: 800}}>medium gray metal cube</span> is rotating.
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Objs/Seq_00/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Preds</div>
+                            <img src="GIFs/Objs/Seq_00/pred_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">Obj 1.</div>
+                              <img src="GIFs/Objs/Seq_00/gt_obj_1.gif" alt=""></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Obj 2.</div>
+                            <img src="GIFs/Objs/Seq_00/gt_obj_2.gif" alt=""></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Obj 3.</div>
+                            <img src="GIFs/Objs/Seq_00/gt_obj_4.gif" alt=""></img>
+                          </div>
+                        <div class="gif-item">
+                          <div class="gif-title">Obj 4.</div>
+                          <img src="GIFs/Objs/Seq_00/gt_obj_5.gif" alt=""></img>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            the <span style={{color: 'blue',fontWeight: 800}}>large blue metal cone</span> is picked up and containing the small yellow rubber cone.
+                            the <span style={{color: 'green',fontWeight: 800}}>medium green metal cylinder </span>
+                            is sliding to (-1, 1).
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Objs/Seq_02/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Preds</div>
+                            <img src="GIFs/Objs/Seq_02/pred_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">Obj 1.</div>
+                              <img src="GIFs/Objs/Seq_02/gt_obj_3.gif" alt=""></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Obj 2.</div>
+                            <img src="GIFs/Objs/Seq_02/gt_obj_4.gif" alt=""></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Obj 3.</div>
+                            <img src="GIFs/Objs/Seq_02/gt_obj_5.gif" alt=""></img>
+                          </div>
+                        <div class="gif-item">
+                          <div class="gif-title">Obj 4.</div>
+                          <img src="GIFs/Objs/Seq_02/gt_obj_6.gif" alt=""></img>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="gif-container">
+                        <p class="git-title-main">
+                          <code>
+                            the <span style={{color: 'brown',fontWeight: 800}}>medium brown metal cone</span> is picked up and placed to (-3, -3).
+                            the <span style={{color: 'brown',fontWeight: 800}}>large brown metal cone</span> is picked up and containing the small gold metal snitch.
+                          </code>
+                        </p>
+                        <div class="gif-items">
+                          <div class="gif-item">
+                            <div class="gif-title">GT</div>
+                            <img src="GIFs/Objs/Seq_01/gt_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Preds</div>
+                            <img src="GIFs/Objs/Seq_01/pred_GIF_frames.gif" alt="GT"></img>
+                          </div>
+                          <div class="gif-item">
+                              <div class="gif-title">Obj 1.</div>
+                              <img src="GIFs/Objs/Seq_01/gt_obj_3.gif" alt=""></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Obj 2.</div>
+                            <img src="GIFs/Objs/Seq_01/gt_obj_4.gif" alt=""></img>
+                          </div>
+                          <div class="gif-item">
+                            <div class="gif-title">Obj 3.</div>
+                            <img src="GIFs/Objs/Seq_01/gt_obj_6.gif" alt=""></img>
+                          </div>
+                        <div class="gif-item">
+                          <div class="gif-title">Obj 4.</div>
+                          <img src="GIFs/Objs/Seq_01/gt_obj_8.gif" alt=""></img>
+                        </div>
+                      </div>
                     </div>
 
 
