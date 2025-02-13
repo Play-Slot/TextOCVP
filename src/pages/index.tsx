@@ -525,8 +525,27 @@ const IndexPage: React.FC<PageProps> = () => {
 
                     <Heading> Text-to-Slot Attention </Heading>
 
-                    TODO
+                    <p>An additional advantage of using object-centric representations is the improved
+                    interpretability.
+                    This can be shown in the text-to slot attention weights, which help us understand how the textual information influences and guides the model predictions.</p>
 
+                    <p>First, we visualize the text-to-slot attention weights for different cross-attention heads for a single object.
+                    We observe that the slot representing the rotating cube attends to relevant text-tokens from the input, such as the object shape, size and the action taking place.</p>
+
+                    <div class="att_img">
+                      <img src="imgs/text_to_slot/tts_1.png" alt="tts 1"></img>
+                    </div>
+
+
+                    <br></br>
+                    We additionally  visaulze the Text-to-Slot attention weights, averaged across attention heads, for different objects in a CATER sequence.
+
+                    We observe that slots that represent objects in the textual description attend to relevant text tokens, such as their target coordinate locations.
+
+
+                    <div class="att_img">
+                      <img src="imgs/text_to_slot/tts_2.png" alt="tts 2"></img>
+                    </div>
 
 
                     <Citation/>

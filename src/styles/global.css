@@ -218,6 +218,16 @@ a:hover::after {
 }
 
 
+.att_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.att_img img{
+  max-width: 95%;
+  height: auto;
+  object-fit: contain;
+}
 
 
 /*  */
