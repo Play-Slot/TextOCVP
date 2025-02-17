@@ -39,7 +39,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     {/* Authors */}
                     <div className="flex flex-wrap justify-center text-lg mb-2.5 mt-0 leading-none">
                         <Author website={"http://angelvillarcorrales.com/templates/home.php"} firstAuthor={true} affiliations={""}>Angel Villar-Corrales</Author>
-                        <Author website={""} firstAuthor={true} affiliations={""}>Gjergj Plepi</Author>
+                        <Author website={"https://github.com/Gjergj121"} firstAuthor={true} affiliations={""}>Gjergj Plepi</Author>
                         <Author website={"https://www.ais.uni-bonn.de/behnke/"} firstAuthor={false} affiliations={""}>Sven Behnke</Author>
                     </div>
 
@@ -64,8 +64,20 @@ const IndexPage: React.FC<PageProps> = () => {
 
                     {/* Abstract */}
                     <Abstract>
-                      Accurate and flexible world models are crucial for autonomous systems to reason about          their surroundings and predict future outcomes. Object-centric world models, equipped with a
-                      structured latent space, have recently shown strong capabilities to model object dynamics and interactions. However, existing approaches struggle to scale to complex datasets and fail to incorporate external guidance, limiting their effectiveness as world models in robotic applications. In this work, we propose TextOCVP, an object-centric model for image-to-video generation with language guidance, enabling it to function as a world model for forecasting future scene dynamics conditioned on textual information. TextOCVP parses an observed scene into object representations, called slots, and utilizes a text-conditioned transformer predictor to forecast future object states and video frames. Our approach jointly models object dynamics and interactions while incorporating textual guidance, thus leading to accurate and controllable predictions. We show that the structured latent space of our method provides enhanced control over the prediction process, outperforming existing image-to-video generative models across different tasks.
+                      Accurate and flexible world models are crucial for autonomous systems to understand their
+                      environment and predict future events. Object-centric models, with structured latent spaces,
+                      have shown promise in modeling object dynamics and interactions, but often face challenges
+                      in scaling to complex datasets and incorporating external guidance, limiting their
+                      applicability in robotics. To address these limitations, we propose TextOCVP, an
+                      object-centric model for image-to-video generation guided by textual descriptions.
+                      TextOCVP parses an observed scene into object representations, called slots, and utilizes
+                      a text-conditioned transformer predictor to forecast future object states and video frames. Our approach jointly models object dynamics and interactions while incorporating textual
+                      guidance, thus leading to accurate and controllable predictions. Our method’s structured
+                      latent space offers enhanced control over the prediction process, outperforming several
+                      image-to-video generative baselines. Additionally, we demonstrate that structured
+                      object-centric representations provide superior controllability and interpretability,
+                      facilitating the modeling of object dynamics and enabling more precise and
+                      understandable predictions.
                     </Abstract>
 
 
@@ -73,7 +85,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     <div>
                       Overview of TextOCVP model. <br></br>
                       <b> a) Overview: </b>  TextOCVP parses the reference frame into object slot representations.
-                      The text-conditioned object-centric predictor module models the object dynamics and interactions, incorporating information from the textural description to predict future object states, which can be decoded into frames.
+                      The text-conditioned object-centric predictor module models the object dynamics and interactions, incorporating information from the textual description to predict future object states, which can be decoded into frames.
                       <br></br>
                       <b> b) Predictor: </b> Overview of our proposed text-conditioned object-centric predictor module.
                     </div>
@@ -111,8 +123,8 @@ const IndexPage: React.FC<PageProps> = () => {
 
                     <div>
                       TextOCVP generates, given a single reference frame and a text caption, a sequence that closely aligns to the ground-truth.
-                      We observe that TextOCVP maintains sharp object representations and correctly models the dynamics and interactions between the robot and the objects.
-                      In contrasts, the baseline model features multiple errors and artifacts, such as missing objects or blurry contours.
+                      We observe that TextOCVP maintains sharp object representations and correctly models the dynamics and interactions between the robot arm and the objects.
+                      In contrast, the baseline model features multiple errors and artifacts, such as missing objects, blurry contours, or failure in robot arm movement.
 
                     </div>
 
@@ -206,7 +218,7 @@ const IndexPage: React.FC<PageProps> = () => {
                         <p class="git-title-main">
                           <code>
                             put the <span style={{color: 'gray',fontWeight: 800}}>gray block</span> in
-                            the <span style={{color: 'brown',fontWeight: 800}}>brwons bowl</span>.
+                            the <span style={{color: 'brown',fontWeight: 800}}>brown bowl</span>.
                           </code>
                         </p>
                         <div class="gif-items">
@@ -229,8 +241,8 @@ const IndexPage: React.FC<PageProps> = () => {
                     <div class="gif-container">
                         <p class="git-title-main">
                           <code>
-                            put the <span style={{color: 'gray',fontWeight: 800}}>gray block</span> in
-                            the <span style={{color: 'brown',fontWeight: 800}}>brown bowl</span>.
+                            put the <span style={{color: 'blue',fontWeight: 800}}>blue block</span> in
+                            the <span style={{color: 'gray',fontWeight: 800}}>gray bowl</span>.
                           </code>
                         </p>
                         <div class="gif-items">
@@ -276,7 +288,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 
 
-                    <Heading> Object-Centric Video Prediction </Heading>
+                    <Heading> Object-Centric Video Generation </Heading>
 
                     TextOCVP represents each object in its corresponding object slot, learning accurate and interpretable object representations.
 
@@ -414,6 +426,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             </div>
                           </div>
                           <img src="GIFs/Control_CATER/seq_5_FirstCaption.gif" alt="GIF 1"></img>
+                          {/* <img src="GIFs/Control_CATER/Caption_0.gif" alt="GIF 1"></img> */}
                       </div>
                       <div class="control-item">
                           <div class="control-title-caption">
@@ -427,6 +440,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             </div>
                           </div>
                           <img src="GIFs/Control_CATER/seq_5_SecondCaption_actionChanged.gif" alt="GIF 4"></img>
+                          {/* <img src="GIFs/Control_CATER/Caption_1.gif" alt="GIF 1"></img> */}
                       </div>
                       <div class="control-item">
                           <div class="control-title-caption">
@@ -538,7 +552,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 
                     <br></br>
-                    We additionally  visaulze the Text-to-Slot attention weights, averaged across attention heads, for different objects in a CATER sequence.
+                    We additionally  visualize the Text-to-Slot attention weights, averaged across attention heads, for different objects in a CATER sequence.
 
                     We observe that slots that represent objects in the textual description attend to relevant text tokens, such as their target coordinate locations.
 
