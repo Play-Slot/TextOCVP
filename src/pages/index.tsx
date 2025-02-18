@@ -56,7 +56,7 @@ const IndexPage: React.FC<PageProps> = () => {
                         pdfUrl={""}
                         otherUrls={
                           [
-                              ["TODO", "BibTex"],
+                              ["http://angelvillarcorrales.com/templates/others/bibtex_TextOCVP.php", "BibTex"],
                               ["https://github.com/angelvillar96/TextOCVP", "Code"],
                           ]
                         }
