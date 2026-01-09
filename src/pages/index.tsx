@@ -24,7 +24,7 @@ const Article: React.FC = ({children}) => {
 }
 
 
-export const Head: HeadFC = () => <title>TextOCVP: Object-Centric Image to Video Generation with Language Guidance </title>
+export const Head: HeadFC = () => <title>TextOCVP: Object-Centric Video Prediction with Language Guidance </title>
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
@@ -33,21 +33,31 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Article>
                     {/* Title */}
                     <Title>
-                      TextOCVP: Object-Centric Image to Video Generation with Language Guidance
+                      TextOCVP: Object-Centric Video Prediction with Language Guidance
                     </Title>
 
                     {/* Authors */}
                     <div className="flex flex-wrap justify-center text-lg mb-2.5 mt-0 leading-none">
-                        <Author website={"http://angelvillarcorrales.com/templates/home.php"} firstAuthor={true} affiliations={""}>Angel Villar-Corrales</Author>
-                        <Author website={"https://github.com/Gjergj121"} firstAuthor={true} affiliations={""}>Gjergj Plepi</Author>
-                        <Author website={"https://www.ais.uni-bonn.de/behnke/"} firstAuthor={false} affiliations={""}>Sven Behnke</Author>
+                        <Author website={"http://angelvillarcorrales.com/templates/home.php"} firstAuthor={true} affiliations={"1,2"}>Angel Villar-Corrales</Author>
+                        <Author website={"https://github.com/Gjergj121"} firstAuthor={true} affiliations={"2"}>Gjergj Plepi</Author>
+                        <Author website={"https://www.ais.uni-bonn.de/behnke/"} firstAuthor={false} affiliations={"2"}>Sven Behnke</Author>
                     </div>
 
                     <Thanks>* Indicates equal contribution</Thanks>
 
                     {/* Affiliations */}
                     <div className="flex flex-wrap justify-center text-base mb-4 mt-0 leading-none">
-                        <Affiliation website={"https://www.ais.uni-bonn.de/index.html"} number={""}>Autonomous Intelligent Systems, University of Bonn</Affiliation>
+                        <Affiliation website={"https://www.ais.uni-bonn.de/index.html"} number={"1"}>FAIR at Meta</Affiliation>
+                        <Affiliation website={"https://www.ais.uni-bonn.de/index.html"} number={"2"}>Autonomous Intelligent Systems, University of Bonn</Affiliation>
+                    </div>
+
+                    {/* Venue */}
+                    <div className="flex flex-wrap justify-center text-base mb-4 mt-0 leading-none">
+                      <Affiliation website={""} number={""}>
+                        <strong>
+                          Transactions on Machine Learning Research (TMLR) 2026
+                        </strong>
+                      </Affiliation>
                     </div>
 
                     {/* Links */}
@@ -58,26 +68,22 @@ const IndexPage: React.FC<PageProps> = () => {
                           [
                               ["http://angelvillarcorrales.com/templates/others/bibtex_TextOCVP.php", "BibTex"],
                               ["https://github.com/angelvillar96/TextOCVP", "Code"],
+                              ["https://openreview.net/forum?id=7JEgXCyQgX", "Reviews"],
                           ]
                         }
                     />
 
                     {/* Abstract */}
                     <Abstract>
-                      Accurate and flexible world models are crucial for autonomous systems to understand their
-                      environment and predict future events. Object-centric models, with structured latent spaces,
-                      have shown promise in modeling object dynamics and interactions, but often face challenges
-                      in scaling to complex datasets and incorporating external guidance, limiting their
-                      applicability in robotics. To address these limitations, we propose TextOCVP, an
-                      object-centric model for image-to-video generation guided by textual descriptions.
-                      TextOCVP parses an observed scene into object representations, called slots, and utilizes
-                      a text-conditioned transformer predictor to forecast future object states and video frames. Our approach jointly models object dynamics and interactions while incorporating textual
-                      guidance, thus leading to accurate and controllable predictions. Our method’s structured
-                      latent space offers enhanced control over the prediction process, outperforming several
-                      image-to-video generative baselines. Additionally, we demonstrate that structured
-                      object-centric representations provide superior controllability and interpretability,
-                      facilitating the modeling of object dynamics and enabling more precise and
-                      understandable predictions.
+                      Understanding and forecasting future scene states is critical for autonomous agents to plan and act effectively in complex environments.
+                      Object-centric models, with structured latent spaces, have shown promise in modeling object dynamics and predicting future scene states,
+                      but often struggle to scale beyond simple synthetic datasets and to integrate external guidance, limiting their applicability in robotic scenarios.
+                      To address these limitations, we propose TextOCVP, an object-centric model for video prediction guided by textual descriptions.
+                      TextOCVP parses an observed scene into object representations, called slots, and utilizes a text-conditioned transformer predictor to forecast future object states and video frames.
+                      Our approach jointly models object dynamics and interactions while incorporating textual guidance, enabling accurate and controllable predictions.
+                      TextOCVP’s structured latent space offers a more precise control of the forecasting process, outperforming several video prediction baselines on two datasets.
+                      Additionally, we show that structured object-centric representations provide superior robustness to novel scene configurations,
+                      as well as improved controllability and interpretability, enabling more precise and understandable predictions.
                     </Abstract>
 
 
