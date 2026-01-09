@@ -1,6 +1,6 @@
-@article{villar_TextOCVP_2025,
-  title={Object-Centric Image to Video Generation with Language Guidance},
+@article{villar_TextOCVP_2026,
+  title={{TextOCVP}: Object-Centric Video Prediction with Language Guidance},
   author={Villar-Corrales, Angel, and Plepi, Gjergj and Behnke, Sven},
-  journal={arXiv preprint arXiv:2502.11655},
-  year={2025}
+  journal={Transactions on Machine Learning Research (TMLR)},
+  year={2026}
 }
