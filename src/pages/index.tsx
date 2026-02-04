@@ -47,7 +47,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
                     {/* Affiliations */}
                     <div className="flex flex-wrap justify-center text-base mb-4 mt-0 leading-none">
-                        <Affiliation website={"https://www.ais.uni-bonn.de/index.html"} number={"1"}>FAIR at Meta</Affiliation>
+                        <Affiliation website={""} number={"1"}>FAIR at Meta</Affiliation>
                         <Affiliation website={"https://www.ais.uni-bonn.de/index.html"} number={"2"}>Autonomous Intelligent Systems, University of Bonn</Affiliation>
                     </div>
 
@@ -63,7 +63,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     {/* Links */}
                     <LinkGroup
                         arxivUrl={"https://arxiv.org/abs/2502.11655"}
-                        pdfUrl={"https://arxiv.org/pdf/2502.11655"}
+                        pdfUrl={"https://openreview.net/pdf?id=7JEgXCyQgX"}
                         otherUrls={
                           [
                               ["http://angelvillarcorrales.com/templates/others/bibtex_TextOCVP.php", "BibTex"],
@@ -86,6 +86,20 @@ const IndexPage: React.FC<PageProps> = () => {
                       as well as improved controllability and interpretability, enabling more precise and understandable predictions.
                     </Abstract>
 
+                    {/* Video */}
+                    {/* <Heading>Video</Heading> */}
+                    <div className="flex justify-center my-4">
+                      <div className="w-full max-w-3xl">
+                        <video
+                          className="w-full border border-black rounded-lg"
+                          controls
+                          preload="metadata"
+                        >
+                          <source src="video.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
 
                     <Heading>TextOCVP Architecture</Heading>
                     <div>
